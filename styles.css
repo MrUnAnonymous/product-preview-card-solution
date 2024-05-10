@@ -1,0 +1,120 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    /* Primary */
+    --dark-cyan: hsl(158, 36%, 37%);
+    --cream: hsl(30, 38%, 92%);
+
+    /* Neutral */
+    --dark-blue: hsl(212, 21%, 14%);
+    --dark-greyish-blue: hsl(228, 12%, 48%);
+    --white: hsl(0, 0%, 100%);
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--cream);
+    font-family: "Montserrat", "sans-serif";
+    font-size: 14px;
+    min-height: 100vh;
+}
+
+h2 {
+    display: flex;
+    align-items: flex-start;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.image-preview {
+    height: 400px;
+    width: 300px;
+    background-image: url(images/image-product-desktop.jpg);
+    background-size: cover;
+    border-radius: 20px 0 0 20px;
+}
+
+.details {
+    height: 400px;
+    max-width: 300px;
+    padding: 20px;
+    background-color: var(--white);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    border-radius: 0 20px 20px 0;
+}
+
+.product-type {
+    padding-top: 15px;
+    font-weight: 500;
+    font-size: 12px;
+    color: var(--dark-greyish-blue);
+}
+
+.product-title {
+    padding: 15px 40px 5px 1px;
+    color: var(--dark-blue);
+    font-family: "Fraunces", "serif";
+    font-weight: 700;
+}
+
+.product-details {
+    margin: 10px 10px 15px 1px;
+    color: var(--dark-greyish-blue);
+}
+
+.amount {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.product-amount {
+    width: 100%;
+    font-weight: 400;
+    font-size: 12px;
+    text-decoration: line-through;
+}
+
+.discounted-prize {
+    margin-right: 20px;
+    text-decoration: none;
+    font-family: "Fraunces", "serif";
+    font-size: 30px;
+    font-weight: 700;
+    color: var(--dark-cyan);
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+    background-color: var(--dark-cyan);
+    color: var(--white);
+    height: 40px;
+    width: 200px;
+    border-radius: 5px;
+    border: none;
+    margin-top: 15px;
+    cursor: pointer;
+}
+
+button img {
+    margin-right: 5px;
+}
+
+button:hover {
+    background-color: var(--dark-blue);
+    color: var(--white);
+}
